@@ -130,6 +130,7 @@ function gcalItemToRawEventDef(item, gcalTimezone) {
         url: url,
         location: item.location,
         description: item.description,
+        extendedProps: item.extendedProperties || null
     };
 }
 // Injects a string like "arg=value" into the querystring of a URL
